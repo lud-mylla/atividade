@@ -7,7 +7,7 @@ class Treino:
         self._distancia = distancia
         self._tempo = tempo
 
-    # Getters
+    
     def get_id(self) -> int:
         return self._id
 
@@ -20,7 +20,6 @@ class Treino:
     def get_tempo(self) -> timedelta:
         return self._tempo
 
-    # Setters
     def set_id(self, id: int):
         self._id = id
 
@@ -33,7 +32,7 @@ class Treino:
     def set_tempo(self, tempo: timedelta):
         self._tempo = tempo
 
-    # ToString
+   
     def __str__(self) -> str:
         return (f"Treino ID: {self._id}, Data: {self._data.strftime('%Y-%m-%d %H:%M:%S')}, "
                 f"Distância: {self._distancia:.2f} km, Tempo: {str(self._tempo)}")
